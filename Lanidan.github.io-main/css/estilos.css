@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F8E9A1; /* Fondo general */
+    color: #333; /* Color de texto general */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px; /* Reducido el padding para dispositivos pequeños */
+    flex: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333; /* Fondo del navbar */
+    color: white;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.navbar a:hover{
+    color: #FFD700;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.5em;
+}
+
+.navbar .navbar-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap; /* Permitir que los enlaces se envuelvan */
+}
+
+.navbar .navbar-button {
+    padding: 10px 20px;
+    background-color: #1E90FF; /* Color del botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.navbar .navbar-button:hover {
+    background-color: #0056b3;
+}
+
+.navbar .navbar-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(30, 144, 255, 0.5);
+}
+
+.navbar-toggler {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navbar-toggler div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+.navbar-links {
+    display: flex;
+}
+
+.navbar-links.active {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .navbar-links {
+        display: none;
+        width: 100%;
+        flex-direction: column; /* Cambiar a columna para la vista móvil */
+    }
+
+    .navbar-toggler {
+        display: flex;
+    }
+
+    .navbar-links.active {
+        display: flex;
+        width: 100%;
+    }
+
+    .navbar-links a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre las tarjetas */
+    justify-content: center; /* Centrar las tarjetas horizontalmente */
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.card {
+    width: 100%; /* Ancho de la tarjeta */
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: transform 0.2s;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 16px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-text {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px; /* Ajustar el padding para dispositivos pequeños */
+    }
+
+    .card {
+        max-width: 100%; /* Hacer que las tarjetas ocupen todo el ancho en dispositivos pequeños */
+    }
+}
+
+/* estilos contacto correo*/
+.contact-section {
+    width: 60%;
+    background-color: #ffffff;
+    padding: 40px 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-section label {
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-section input,
+.contact-section textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-section button {
+    padding: 10px 20px;
+    background-color: #1E90FF; /* Color del botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-section button:hover {
+    background-color: #0056b3;
+}
+
+/*seccion contacto whatsapp*/
+.whatsapp-contact {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.whatsapp-contact a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    background-color: #25D366;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+    margin: 2opx;
+}
+
+.whatsapp-contact a:hover {
+    background-color: #1EBE54;
+}
+
+.whatsapp-contact img {
+    width: 24px;
+    height: 24px;
+}
+
+
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    height: 58px;
+}
+.company-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+.top-button {
+    background-color: #F8E9A1;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.top-button:hover{
+   background-color: #333;
+   color: #F8E9A1;
+   border: 1px solid #F8E9A1 ;
+}
+.content-formulario {
+    margin-top: 60px; 
+}
+
+
+
+
+
+
+/*seccion producto1*/
+
+
+
+
+
+
+footer {
+    background-color: #333; /* Fondo del footer */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: auto;
+}
+
+footer a {
+    color: #FFD700; /* Amarillo inspirado en Pikachu */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #FFA500; /* Anaranjado inspirado en Charmander */
+}
+
+
+
+/*-----------PRODUCTO 2 ---------------------------*/
+
+
+.company-name {
+    font-size: 1.5em;
+}
+
+.top-button {
+    color: #333;
+    text-decoration: none;
+}
+.product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    max-width: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.product-item:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    flex: 1 1 auto;
+    max-height: 60%;
+}
+
+.product-item h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    flex: 0 0 auto;
+}
+
+.product-item p {
+    font-size: 0.9em;
+    color: #555;
+    flex: 0 0 auto;
+}
+
+.buy-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    flex: 0 0 auto;
+    
+}
+
+.buy-button:hover {
+    background-color: white;
+    color: #333;
+    border: 2px solid #333;
+}
+.ropa{
+
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*producto 1*/
+
+.card-container-p2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.card-p2 {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card-p2:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-p2 img {
+    width: 100%;
+    height: auto;
+    max-height: 70%;
+    object-fit: cover;
+}
+
+.card-body-p2 {
+    padding: 15px;
+}
+
+.card-text-p2 {
+    margin: 10px 0;
+    font-size: 1.1em;
+}

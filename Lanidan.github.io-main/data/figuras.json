@@ -1,0 +1,38 @@
+[
+    {
+        "imageUrl": "/assets/ray.jpg",
+        "price": "$5000"
+    },
+    {
+        "imageUrl": "/assets/producto5.jpg",
+        "price": "$20000"
+    },
+    {
+        "imageUrl": "/assets/producto6.jpg",
+        "price": "$30000"
+    },
+    {
+        "imageUrl": "/assets/producto7.jpg",
+        "price": "$40000"
+    },
+    {
+        "imageUrl": "/assets/producto8.jpg",
+        "price": "$50000"
+    },
+    {
+        "imageUrl": "/assets/producto9.jpg",
+        "price": "$60000"
+    },
+    {
+        "imageUrl": "/assets/producto10.jpg",
+        "price": "$70000"
+    },
+    {
+        "imageUrl": "/assets/producto11.jpg",
+        "price": "$80000"
+    },
+    {
+        "imageUrl": "/assets/producto12.jpg",
+        "price": "$90000"
+    }
+]

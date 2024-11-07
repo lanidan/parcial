@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ropa y Calzado</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+    
+</head>
+<body>
+    <div class="top-bar">
+        <div class="company-name">TuKiMón</div>
+        <a href="/index.html" class="top-button">Inicio</a>
+    </div>
+    
+    <main style="padding: 20px;">
+        <!-- Filtro de precio -->
+<div style="margin-top: 80px;">
+    <label for="priceFilter">Precio máximo:</label>
+    <input type="number" id="priceFilter" placeholder="Ej. 50000">
+    <button onclick="filtrarProductos()">Filtrar</button>
+        </div>
+        <h1 class="ropa">Nuestros Productos</h1>
+        <div class="product-gallery" id="product-cards">
+            
+        </div>
+        <div class="card-container" id="product-cards">
+            <!-- Aquí se cargarán las tarjetas dinámicamente -->
+        </div>
+
+    </main>
+
+
+    
+    <footer>
+        <p>&copy; 2024 TuKiMón Products. Todos los derechos reservados.</p>
+        <p>
+            <a href="#">Política de Privacidad</a> | 
+            <a href="#">Términos de Servicio</a> | 
+            <a href="/index.html">Inicio</a>
+        </p>
+    </footer>
+    <script src="../js/producto2.js"></script>
+</body>
+</html>

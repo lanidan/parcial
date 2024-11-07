@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuKiMón</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    
+    <div class="navbar">
+        <div class="navbar-brand">TuKiMón</div>
+        <div class="navbar-links">
+            <a href="/utilities/producto1.html">Figuras coleccionables</a>
+            <a href="/utilities/producto2.html">Ropa y calzado</a>
+            <a href="/utilities/producto3.html">Tazas y posters / accesorios</a>
+
+        </div>
+        <button class="navbar-button"><a href="/templates/contacto.html">Contactos</a></button>
+        <div class="navbar-toggler" onclick="toggleNavbar()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card-container">
+
+        <div class="card">
+            <img src="./assets/producto1.jpg" class="card-img-top" alt="Producto 1">
+            <div class="card-body">
+                <p class="card-text">Figuras coleccionables.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./assets/producto4.jpg" class="card-img-top" alt="Producto 1">
+            <div class="card-body">
+                <p class="card-text">Todos los estilos y tipo de ropa que desea encontrar como camperas, calzados y mucho más</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./assets/producto3.jpg" class="card-img-top" alt="Producto 1">
+            <div class="card-body">
+                <p class="card-text">Tazas, posters originales y mucho más para decorar tu hogar.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 TuKiMón Products. Todos los derechos reservados.</p>
+        <p>
+            <a href="#">Política de Privacidad</a> | 
+            <a href="#">Términos de Servicio</a> | 
+            <a href="/templates/contacto.html">Contacto</a>
+        </p>
+    </footer>
+
+    <script>
+        function toggleNavbar() {
+            const links = document.querySelector('.navbar-links');
+            links.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

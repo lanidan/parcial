@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+    <style>
+
+
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .card {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: box-shadow 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            max-height: 70%;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .card-text {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+        .buy-button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            
+        }
+
+        .buy-button:hover {
+            background-color: white;
+            color: #333;
+            border: 2px solid #333;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="company-name">TuKiMón</div>
+        <a href="/index.html" class="top-button">Inicio</a>
+    </div>
+
+    <div class="container" style="margin-top: 30px;padding: 20px;">
+        <!-- Filtro de precio -->
+        <div style="margin-top: 50px;">
+            <label for="priceFilter">Precio máximo:</label>
+            <input type="number" id="priceFilter" placeholder="Ej. 50000">
+            <button onclick="filtrarProductos()">Filtrar</button>
+        </div>
+
+        <div class="card-container" id="product-cards">
+            <!-- Aquí se cargarán las tarjetas dinámicamente -->
+        </div>
+    </div>
+
+    </div>
+    <script src="../js/producto1.js" defer></script>
+</body>
+</html>
+
+    <footer>
+        <p>&copy; 2024 TuKiMón Products. Todos los derechos reservados.</p>
+        <p>
+            <a href="#">Política de Privacidad</a> | 
+            <a href="#">Términos de Servicio</a> | 
+            <a href="/templates/contacto.html">Contacto</a>
+        </p>
+    </footer>
+</body>
+</html>

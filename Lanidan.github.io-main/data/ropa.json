@@ -1,0 +1,22 @@
+[
+    {
+        "imageUrl": "/assets/calzado1.jpg",
+        "price": "$50000"
+    },
+    {
+        "imageUrl": "/assets/ropa1.jpg",
+        "price": "$70000"
+    },
+    {
+        "imageUrl": "/assets/calzado2.jpg",
+        "price": "$60000"
+    },
+    {
+        "imageUrl": "/assets/ropa2.jpg",
+        "price": "$90000"
+    },
+    {
+        "imageUrl": "/assets/ropa3.jpg",
+        "price": "$150000"
+    }
+]
